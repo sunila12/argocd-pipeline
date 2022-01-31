@@ -25,12 +25,12 @@ def details():
 
 @app.route("/health")
 def health():
-    retun jsonify(
+    return jsonify(
         status="up"
     )
 @app.route("/")
 def home():
-    retun "Hello World !! You have just hist the home page"
+    return "Hello World !! You have just hist the home page"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int("5000"), debug=True)
